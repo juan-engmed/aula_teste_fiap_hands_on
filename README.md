@@ -97,9 +97,12 @@ fiap-edge-iot-hands-on/
 ├── .env.example
 ├── .gitignore
 └── src/
-    ├── edge_device_simulator.py
-    ├── mqtt_ingestion_service.py
-    └── ai_alert_agent.py
+    ├── edge/
+    │   └── edge_device_simulator.py
+    ├── cloud/
+    │   └── mqtt_ingestion_service.py
+    └── agent/
+        └── ai_alert_agent.py
 ```
 
 Arquivos gerados em execução:

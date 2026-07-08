@@ -201,7 +201,7 @@ Observação:
 Em um terminal:
 
 ```bash
-uv run python src/mqtt_ingestion_service.py
+uv run python -m src.cloud.mqtt_ingestion_service
 ```
 
 Saída esperada:
@@ -221,7 +221,7 @@ Esse serviço fica aguardando mensagens MQTT.
 Em outro terminal:
 
 ```bash
-uv run python src/edge_device_simulator.py
+uv run python -m src.edge.edge_device_simulator
 ```
 
 O simulador vai gerar leituras de temperatura, analisar a janela local e publicar um alerta quando identificar padrão de falha.

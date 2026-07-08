@@ -56,6 +56,8 @@ Edge Device Simulator
 7. O AI Agent gera uma mensagem operacional e envia para o Google Chat.
 8. O terminal exibe métricas simples de observabilidade do agente.
 
+### Desenho Arquitetural
+![Arquitetura da demo](figures/FIAP_Arq_Hands_On.png)
 ---
 
 ## Critério de detecção na borda

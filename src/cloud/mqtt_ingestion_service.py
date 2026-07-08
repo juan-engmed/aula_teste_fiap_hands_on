@@ -2,7 +2,7 @@ import json
 import os
 from datetime import datetime, timezone
 from pathlib import Path
-from ai_alert_agent import handle_alert_event
+from src.agent.ai_alert_agent import handle_alert_event
 
 import paho.mqtt.client as mqtt
 from dotenv import load_dotenv

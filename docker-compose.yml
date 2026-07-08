@@ -1,0 +1,13 @@
+
+
+# Docker compose para o hands-on de Edge IoT da FIAP
+# Inicia um broker MQTT para simular a comunicação entre o dispositivo de borda e a aplicação na nuvem.
+# Utilizamos o EMQX pois há interface gráfica web para monitoramento do broker na porta 18083
+services:
+  mqtt-broker:
+    image: emqx/emqx:latest
+    container_name: mqtt-broker
+    ports:
+      - "1883:1883"
+      - "8083:8083"
+      - "18083:18083"
